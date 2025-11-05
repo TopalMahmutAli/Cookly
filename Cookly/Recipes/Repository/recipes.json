@@ -20,13 +20,13 @@
         "steps": ["Mélanger le mascarpone", "Monter les blancs", "Mélanger", "Placer les boudoirs", "Monter le dessert", "Server"]
     },
     {
-        "id": 2,
+        "id": 3,
         "title": "Salade César",
-        "image": "césar",
+        "image": "cesar",
         "time": "15 min",
         "difficulty": "Facile",
         "category": "Entrée",
         "ingredients": ["Salade", "Poulet", "Croûtons", "Sauce César"],
-        "steps": ["Couper les ingrédients", "Mélanger", "Servir frais"]
+        "steps": ["Couper les ingrédients", "Mélanger", "Servir et manger frais"]
     }
 ]

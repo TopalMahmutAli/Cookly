@@ -30,20 +30,48 @@ public struct RecipeCardView: View {
             Image(image)
                 .resizable()
                 .scaledToFill()
-                .frame(width: 80, height: 80)
-                .clipShape(RoundedRectangle(cornerRadius: 10))
-            VStack(alignment: .leading, spacing: 6){
+                .frame(width:100, height:100)
+                .clipShape(RoundedRectangle(cornerRadius: 12))
+            VStack(alignment: .leading, spacing: 8){
                 Text(title)
-                    .font(.headline)
-                Text("\(time) . \(difficulty)")
-                    .font(.subheadline)
-                    .foregroundColor(.secondary)
+                    .font(.title3)
+                    .fontWeight(.semibold)
+                    .foregroundColor(.primary)
+                    .lineLimit(2)
+                HStack(spacing:6){
+                    HStack(spacing: 6){
+                        Image(systemName: "clock")
+                            .foregroundColor(Color.greenPastelMedium)
+                            .font(.subheadline)
+                        Text(time)
+                            .font(.subheadline)
+                            .foregroundColor(.secondary)
+                    }
+                    HStack(spacing: 6){
+                        Image(systemName: "chart.bar")
+                            .foregroundColor(Color.greenPastelMedium)
+                            .font(.subheadline)
+                        Text(difficulty)
+                            .font(.subheadline)
+                            .foregroundColor(.secondary)
+                    }
+                
+                }
             }
-            Spacer()
+            .padding(16)
         }
-        .padding()
-        .background(Color(.systemGray6))
-        .clipShape(RoundedRectangle(cornerRadius: 12))
-        .shadow(radius:1)
+//        .background(Color.white)
+        .cornerRadius(16)
+//        .overlay(
+//            RoundedRectangle(cornerRadius: 16)
+//                .stroke(Color.greenPastelMedium, lineWidth: 1.5)
+//        )
+        .shadow(
+            color: Color.greenSage.opacity(0.15),
+            radius:8,
+            x: 0,
+            y: 4
+            
+        )
     }
 }

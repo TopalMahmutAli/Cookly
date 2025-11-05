@@ -20,4 +20,7 @@ public extension Color {
     static let greenSageDark = Color(red: 0.45, green: 0.65, blue: 0.45)
     // Vert pastel lumineux
     static let greenPastelBright = Color(red: 0.6, green: 0.8, blue: 0.6)
+    
+    static let TextColor = Color(red: 0.5, green: 0.45, blue: 0.5)
+    
 }

@@ -6,13 +6,30 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		EAE040CD2EBB3F4000B4AEDE /* DesignSystem in Frameworks */ = {isa = PBXBuildFile; productRef = EAE040CC2EBB3F4000B4AEDE /* DesignSystem */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		EA25577C2EBA54E800A7C7AA /* Cookly.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cookly.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		EAE040D02EBB3F9C00B4AEDE /* Exceptions for "Cookly" folder in "Cookly" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				package/Users/mt254663/Desktop/Cookly/Cookly/package/DesignSystem,
+			);
+			target = EA25577B2EBA54E800A7C7AA /* Cookly */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		EA25577E2EBA54E800A7C7AA /* Cookly */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				EAE040D02EBB3F9C00B4AEDE /* Exceptions for "Cookly" folder in "Cookly" target */,
+			);
 			path = Cookly;
 			sourceTree = "<group>";
 		};
@@ -23,6 +40,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EAE040CD2EBB3F4000B4AEDE /* DesignSystem in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +83,7 @@
 			);
 			name = Cookly;
 			packageProductDependencies = (
+				EAE040CC2EBB3F4000B4AEDE /* DesignSystem */,
 			);
 			productName = Cookly;
 			productReference = EA25577C2EBA54E800A7C7AA /* Cookly.app */;
@@ -94,6 +113,9 @@
 			);
 			mainGroup = EA2557732EBA54E800A7C7AA;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				EAE040CB2EBB3F4000B4AEDE /* XCLocalSwiftPackageReference "../../Documents/DesignSystem" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = EA25577D2EBA54E800A7C7AA /* Products */;
 			projectDirPath = "";
@@ -320,6 +342,20 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		EAE040CB2EBB3F4000B4AEDE /* XCLocalSwiftPackageReference "../../Documents/DesignSystem" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = ../../Documents/DesignSystem;
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		EAE040CC2EBB3F4000B4AEDE /* DesignSystem */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = DesignSystem;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = EA2557742EBA54E800A7C7AA /* Project object */;
 }

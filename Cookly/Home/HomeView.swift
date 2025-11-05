@@ -16,7 +16,7 @@ struct HomePage: View {
         Spacer()
         LogoSection()
         Spacer()
-        NavigationLink(destination: RecipeListView()) {
+        NavigationLink(destination: RecipesListView()) {
           HStack(spacing: 15) {
             Image(systemName: "book.closed.fill")
               .font(.title2)

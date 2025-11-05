@@ -1,32 +1,255 @@
 [
     {
         "id": 1,
-        "title": "Spaghetti Carbonara",
-        "image": "carbonara",
-        "time": "20 min",
-        "difficulty": "Facile",
-        "category": "Plat",
-        "ingredients": ["Spaghetti", "Lardons", "Œufs", "Parmesan"],
-        "steps": ["Faire cuire les pâtes", "Faire revenir les lardons", "Mélanger et servir"]
-    },
-    {
-        "id": 2,
         "title": "Tiramisu",
         "image": "tiramisu",
         "time": "30 min",
         "difficulty": "Moyen",
         "category": "Dessert",
-        "ingredients": ["Mascarpone", "Café", "Boudoir", "Œufs", "Cacao"],
-        "steps": ["Mélanger le mascarpone", "Monter les blancs", "Mélanger", "Placer les boudoirs", "Monter le dessert", "Server"]
-    },
-    {
+        "ingredients": [
+          "Mascarpone",
+          "Café fort",
+          "Biscuits cuillère",
+          "Cacao en poudre",
+          "Œufs",
+          "Sucre"
+        ],
+        "steps": [
+          "Séparer les blancs et les jaunes d'œufs.",
+          "Mélanger le mascarpone avec les jaunes et le sucre.",
+          "Monter les blancs en neige et incorporer délicatement.",
+          "Monter le tiramisu en couches et saupoudrer de cacao.",
+          "Laisser reposer 4h au réfrigérateur."
+        ]
+      },
+      {
+        "id": 2,
+        "title": "Spaghetti Carbonara",
+        "image": "carbonara",
+        "time": "20 min",
+        "difficulty": "Facile",
+        "category": "Plat",
+        "ingredients": [
+          "Spaghetti",
+          "Lardons",
+          "Œufs",
+          "Parmesan",
+          "Poivre"
+        ],
+        "steps": [
+          "Faire cuire les spaghetti al dente.",
+          "Cuire les lardons à feu moyen.",
+          "Battre les œufs avec le parmesan.",
+          "Mélanger les pâtes avec la sauce hors du feu."
+        ]
+      },
+      {
         "id": 3,
         "title": "Salade César",
         "image": "cesar",
         "time": "15 min",
         "difficulty": "Facile",
         "category": "Entrée",
-        "ingredients": ["Salade", "Poulet", "Croûtons", "Sauce César"],
-        "steps": ["Couper les ingrédients", "Mélanger", "Servir et manger frais"]
-    }
+        "ingredients": [
+          "Laitue romaine",
+          "Poulet grillé",
+          "Croûtons",
+          "Parmesan",
+          "Sauce César"
+        ],
+        "steps": [
+          "Griller le poulet et le couper en morceaux.",
+          "Mélanger la laitue, les croûtons et le parmesan.",
+          "Ajouter la sauce César et le poulet avant de servir."
+        ]
+      },
+  {
+    "id": 4,
+    "title": "Pizza Margherita",
+    "image": "pizza_margherita",
+    "time": "25 min",
+    "difficulty": "Facile",
+    "category": "Plat",
+    "ingredients": [
+      "Pâte à pizza",
+      "Sauce tomate",
+      "Mozzarella",
+      "Basilic frais",
+      "Huile d'olive"
+    ],
+    "steps": [
+      "Étaler la pâte à pizza sur une plaque.",
+      "Étaler la sauce tomate uniformément.",
+      "Ajouter la mozzarella et quelques feuilles de basilic.",
+      "Cuire au four à 220°C pendant 10 à 12 minutes."
+    ]
+  },
+  {
+    "id": 5,
+    "title": "Endives au jambon",
+    "image": "endive_jambon",
+    "time": "40 min",
+    "difficulty": "Moyen",
+    "category": "Plat",
+    "ingredients": [
+      "Endives",
+      "Jambon blanc",
+      "Béchamel",
+      "Gruyère râpé",
+      "Beurre"
+    ],
+    "steps": [
+      "Cuire les endives à la vapeur 20 minutes.",
+      "Enrouler chaque endive dans une tranche de jambon.",
+      "Placer dans un plat et napper de béchamel.",
+      "Saupoudrer de gruyère et enfourner 15 minutes à 200°C."
+    ]
+  },
+  {
+    "id": 6,
+    "title": "Tajine de poulet aux olives",
+    "image": "tajine_poulet",
+    "time": "1h15",
+    "difficulty": "Moyen",
+    "category": "Plat",
+    "ingredients": [
+      "Poulet",
+      "Oignons",
+      "Citron confit",
+      "Olives vertes",
+      "Curcuma",
+      "Gingembre",
+      "Coriandre"
+    ],
+    "steps": [
+      "Faire revenir les oignons et le poulet dans l'huile d'olive.",
+      "Ajouter les épices et un peu d'eau.",
+      "Cuire à feu doux 45 minutes.",
+      "Ajouter les olives et le citron confit avant de servir."
+    ]
+  },
+  {
+    "id": 7,
+    "title": "Curry de légumes",
+    "image": "curry_legumes",
+    "time": "35 min",
+    "difficulty": "Facile",
+    "category": "Plat",
+    "ingredients": [
+      "Courgette",
+      "Carottes",
+      "Pois chiches",
+      "Lait de coco",
+      "Pâte de curry"
+    ],
+    "steps": [
+      "Faire revenir les légumes 10 min.",
+      "Ajouter la pâte de curry et le lait de coco.",
+      "Laisser mijoter 20 min à feu doux.",
+      "Servir avec du riz basmati."
+    ]
+  },
+  {
+    "id": 8,
+    "title": "Crêpes sucrées",
+    "image": "crepes",
+    "time": "20 min",
+    "difficulty": "Facile",
+    "category": "Dessert",
+    "ingredients": [
+      "Farine",
+      "Lait",
+      "Œufs",
+      "Sucre",
+      "Beurre"
+    ],
+    "steps": [
+      "Mélanger la farine, les œufs et le lait.",
+      "Ajouter le sucre et le beurre fondu.",
+      "Cuire les crêpes dans une poêle chaude."
+    ]
+  },
+  {
+    "id": 9,
+    "title": "Cookies au chocolat",
+    "image": "cookie",
+    "time": "15 min",
+    "difficulty": "Facile",
+    "category": "Dessert",
+    "ingredients": [
+      "Farine",
+      "Beurre",
+      "Sucre roux",
+      "Œuf",
+      "Pépites de chocolat"
+    ],
+    "steps": [
+      "Mélanger les ingrédients secs.",
+      "Ajouter le beurre fondu et l'œuf.",
+      "Former des boules et déposer sur une plaque.",
+      "Cuire 12 minutes à 180°C."
+    ]
+  },
+  {
+    "id": 10,
+    "title": "Soupe de potiron",
+    "image": "soupe_potiron",
+    "time": "30 min",
+    "difficulty": "Facile",
+    "category": "Entrée",
+    "ingredients": [
+      "Potiron",
+      "Oignon",
+      "Crème fraîche",
+      "Bouillon de légumes",
+      "Beurre"
+    ],
+    "steps": [
+      "Faire revenir les oignons dans le beurre.",
+      "Ajouter le potiron coupé en morceaux.",
+      "Verser le bouillon et cuire 20 min.",
+      "Mixer et ajouter la crème avant de servir."
+    ]
+  },
+  {
+    "id": 11,
+    "title": "Quiche lorraine",
+    "image": "quiche_lorraine",
+    "time": "45 min",
+    "difficulty": "Moyen",
+    "category": "Entrée",
+    "ingredients": [
+      "Pâte brisée",
+      "Crème fraîche",
+      "Lardons",
+      "Œufs",
+      "Gruyère râpé"
+    ],
+    "steps": [
+      "Faire revenir les lardons à la poêle.",
+      "Battre les œufs avec la crème et le fromage.",
+      "Étaler la pâte, garnir et enfourner 35 min à 180°C."
+    ]
+  },
+  {
+    "id": 12,
+    "title": "Bruschetta à la tomate",
+    "image": "bruschetta",
+    "time": "10 min",
+    "difficulty": "Facile",
+    "category": "Entrée",
+    "ingredients": [
+      "Pain de campagne",
+      "Tomates",
+      "Ail",
+      "Huile d'olive",
+      "Basilic"
+    ],
+    "steps": [
+      "Griller les tranches de pain.",
+      "Frotter avec l'ail.",
+      "Ajouter les tomates en dés et le basilic.",
+      "Arroser d’un filet d’huile d’olive."
+    ]
+  }
 ]

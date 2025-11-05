@@ -1,0 +1,32 @@
+[
+    {
+        "id": 1,
+        "title": "Spaghetti Carbonara",
+        "image": "carbonara",
+        "time": "20 min",
+        "difficulty": "Facile",
+        "category": "Plat",
+        "ingredients": ["Spaghetti", "Lardons", "Œufs", "Parmesan"],
+        "steps": ["Faire cuire les pâtes", "Faire revenir les lardons", "Mélanger et servir"]
+    },
+    {
+        "id": 2,
+        "title": "Tiramisu",
+        "image": "tiramisu",
+        "time": "30 min",
+        "difficulty": "Moyen",
+        "category": "Dessert",
+        "ingredients": ["Mascarpone", "Café", "Boudoir", "Œufs", "Cacao"],
+        "steps": ["Mélanger le mascarpone", "Monter les blancs", "Mélanger", "Placer les boudoirs", "Monter le dessert", "Server"]
+    },
+    {
+        "id": 2,
+        "title": "Salade César",
+        "image": "césar",
+        "time": "15 min",
+        "difficulty": "Facile",
+        "category": "Entrée",
+        "ingredients": ["Salade", "Poulet", "Croûtons", "Sauce César"],
+        "steps": ["Couper les ingrédients", "Mélanger", "Servir frais"]
+    }
+]

@@ -1,0 +1,9 @@
+//
+//  .gitignore
+//  Cookly
+//
+//  Created by TOPAL Mahmut-Ali on 05/11/2025.
+//
+
+xcuserdata/
+*.xcuserstate

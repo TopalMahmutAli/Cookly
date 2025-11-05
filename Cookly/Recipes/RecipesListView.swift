@@ -19,7 +19,7 @@ struct RecipesListView: View {
                 Text("Erreur:\(error)")
                     .foregroundColor(.red)
             }else {
-                List(viewModel.recipes){recipe in NavigationLink(destination: Text(recipe.title)){
+                List(viewModel.recipes){recipe in NavigationLink(destination: RecipeDetailView(recipe: recipe)){
                     RecipeCardView(title: recipe.title, image: recipe.image, time: recipe.time, difficulty: recipe.difficulty)
                 }
                     

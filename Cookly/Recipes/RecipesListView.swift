@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import DesignSystem
 
 struct RecipesListView: View {
     @State var viewModel = RecipesViewModel()
@@ -19,7 +20,7 @@ struct RecipesListView: View {
                     .foregroundColor(.red)
             }else {
                 List(viewModel.recipes){recipe in NavigationLink(destination: Text(recipe.title)){
-                    RecipeRowView(recipe: recipe)
+                    RecipeCardView(title: recipe.title, image: recipe.image, time: recipe.time, difficulty: recipe.difficulty)
                 }
                     
                 }

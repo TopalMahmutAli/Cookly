@@ -22,12 +22,20 @@ struct RecipeDetailView: View {
                     .shadow(radius: 4)
                 VStack(alignment: .leading, spacing: 10) {
                     Text(recipe.title)
-                        .font(.title)
-                        .fontWeight(.bold)
-                    HStack {
+                        .font(.system(size: 32, weight: .bold))
+                        .foregroundColor(.greenSageDark)
+                    HStack(spacing:15) {
                         Label(recipe.time, systemImage: "clock")
+                            .font(.subheadline)
+                            .foregroundColor(.greenPastelBright)
                         Label(recipe.difficulty, systemImage: "flame")
+                            .font(.subheadline)
+                            .foregroundColor(.greenPastelBright)
                     }
+                    .padding(.horizontal)
+                    .padding(.vertical, 8)
+                    .background(Color.greenSageDark.opacity(0.1))
+                    .cornerRadius(10)
                     .font(.subheadline)
                     .foregroundColor(.secondary)
                 }
@@ -37,10 +45,13 @@ struct RecipeDetailView: View {
                     .padding(.horizontal)
                 VStack(alignment: .leading, spacing: 8) {
                     Text("Ingrédients 🥕")
-                        .font(.headline)
+                        .font(.title2)
+                        .fontWeight(.bold)
+                        .foregroundColor(.greenSageDark)
                     ForEach(recipe.ingredients, id: \.self) { ingredient in
                         Text("• \(ingredient)")
                             .font(.subheadline)
+                            .padding(.leading)
                     }
                 }
                 .padding(.horizontal)
@@ -48,7 +59,9 @@ struct RecipeDetailView: View {
                     .padding(.horizontal)
                 VStack(alignment: .leading, spacing: 8) {
                     Text("Préparation 👨‍🍳")
-                        .font(.headline)
+                        .font(.title2)
+                        .fontWeight(.bold)
+                        .foregroundColor(.greenSageDark)
                     ForEach(recipe.steps.indices, id: \.self) { index in
                         Text("\(index + 1). \(recipe.steps[index])")
                             .font(.subheadline)
@@ -60,6 +73,8 @@ struct RecipeDetailView: View {
             .navigationTitle(recipe.title)
             .navigationBarTitleDisplayMode(.inline)
             .padding(.bottom, 20)
+            
         }
+        .background(Color.appBackground.ignoresSafeArea())
     }
 }

@@ -9,7 +9,7 @@ struct CooklyApp: App {
 
       NavigationStack {
 
-        HomePage()
+        HomePage() 
 
       }
 

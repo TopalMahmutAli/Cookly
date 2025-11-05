@@ -21,6 +21,7 @@ struct CooklyApp: App {
                         print("erreur de chargement des recettes",error)
                     }
                 }
+            RecipesListView()
         }
     }
 }

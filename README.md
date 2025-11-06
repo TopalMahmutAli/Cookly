@@ -97,6 +97,11 @@ Cookly/
 
 ### Notation
 18/20 
-Nous sommes satisfaits du résultat final. Le projet respecte les principes du MVVM et démontre une bonne compréhension de la modularisation avec un Design System fonctionnel. Nous aurions toutefois pu aller plus loin dans la réutilisabilité des composants du Design System, notamment en leur associant des ViewModel dédiés et en généralisant leur usage dans toutes les vues. Enfin, l'ajout des fonctionnalitées "ajouter une recette, modifier, supprimer" avec persistance locale aurait pu renforcer la dimension applicative du projet.  
+
+Nous sommes satisfaits du résultat final. Le projet respecte les principes du MVVM et démontre une bonne compréhension de la modularisation avec un Design System fonctionnel. 
+
+Nous aurions toutefois pu aller plus loin dans la réutilisabilité des composants du Design System, notamment en leur associant des ViewModel dédiés et en généralisant leur usage dans toutes les vues. 
+
+Enfin, l'ajout des fonctionnalitées "ajouter une recette, modifier, supprimer" avec persistance locale aurait pu renforcer la dimension applicative du projet.  
 
 

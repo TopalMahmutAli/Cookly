@@ -12,17 +12,26 @@ public struct RecipeCardView: View {
     public let image: String
     public let time : String
     public let difficulty: String
+    public let showFavorite: Bool
+    public let isFavorite: Bool
+    public let onToggleFavorite: (() -> Void)?
     
     public init(
         title: String,
         image: String,
         time: String,
-        difficulty: String
+        difficulty: String,
+        showFavorite: Bool = false,
+        isFavorite: Bool = false,
+        onToggleFavorite: (() -> Void)? = nil
     ) {
         self.title = title
         self.image = image
         self.time = time
         self.difficulty = difficulty
+        self.showFavorite = showFavorite
+        self.isFavorite = isFavorite
+        self.onToggleFavorite = onToggleFavorite
     }
     
     public var body: some View {
@@ -33,11 +42,20 @@ public struct RecipeCardView: View {
                 .frame(width:100, height:100)
                 .clipShape(RoundedRectangle(cornerRadius: 12))
             VStack(alignment: .leading, spacing: 8){
-                Text(title)
-                    .font(.title3)
-                    .fontWeight(.semibold)
-                    .foregroundColor(.primary)
-                    .lineLimit(2)
+                HStack(alignment: .firstTextBaseline, spacing: 8){
+                    Text(title)
+                        .font(.title3)
+                        .fontWeight(.semibold)
+                        .foregroundColor(.primary)
+                        .lineLimit(2)
+                    if showFavorite {
+                        Button(action: { onToggleFavorite?() }){
+                            Image(systemName: isFavorite ? "star.fill" : "star")
+                                .foregroundColor(isFavorite ? Color.greenSage : Color.greenPastelMedium)
+                        }
+                        .buttonStyle(.plain)
+                    }
+                }
                 HStack(spacing:6){
                     HStack(spacing: 6){
                         Image(systemName: "clock")

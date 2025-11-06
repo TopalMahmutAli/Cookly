@@ -10,6 +10,7 @@ import DesignSystem
 
 struct RecipeDetailView: View {
     let recipe: RecipeModel
+    @Environment(FavoritesStore.self) private var favoritesStore
     
     var body: some View {
         ScrollView {
@@ -21,9 +22,17 @@ struct RecipeDetailView: View {
                     .clipShape(RoundedRectangle(cornerRadius: 15))
                     .shadow(radius: 4)
                 VStack(alignment: .leading, spacing: 10) {
-                    Text(recipe.title)
-                        .font(.system(size: 32, weight: .bold))
-                        .foregroundColor(.greenSageDark)
+                    HStack(alignment: .firstTextBaseline, spacing: 8){
+                        Text(recipe.title)
+                            .font(.system(size: 32, weight: .bold))
+                            .foregroundColor(.greenSageDark)
+                        Button(action: { favoritesStore.toggleFavorite(id: recipe.id) }){
+                            Image(systemName: favoritesStore.isFavorite(recipe.id) ? "star.fill" : "star")
+                                .foregroundColor(favoritesStore.isFavorite(recipe.id) ? .greenSage : .greenPastelBright)
+                                .font(.title3)
+                        }
+                        .buttonStyle(.plain)
+                    }
                     HStack(spacing:15) {
                         Label(recipe.time, systemImage: "clock")
                             .font(.subheadline)

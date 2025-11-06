@@ -41,7 +41,7 @@ public struct RecipeCardView: View {
                 .scaledToFill()
                 .frame(width: 100, height: 100)
                 .clipShape(RoundedRectangle(cornerRadius: 12))
-
+            
             VStack(alignment: .leading, spacing: 8) {
                 HStack(alignment: .firstTextBaseline, spacing: 8) {
                     Text(title)
@@ -49,7 +49,7 @@ public struct RecipeCardView: View {
                         .fontWeight(.semibold)
                         .foregroundColor(.primary)
                         .lineLimit(2)
-
+                    
                     if showFavorite {
                         Button(action: { onToggleFavorite?() }) {
                             Image(systemName: isFavorite ? "star.fill" : "star")
@@ -58,7 +58,7 @@ public struct RecipeCardView: View {
                         .buttonStyle(.plain)
                     }
                 }
-
+                
                 HStack(spacing: 12) {
                     HStack(spacing: 6) {
                         Image(systemName: "clock")
@@ -68,7 +68,7 @@ public struct RecipeCardView: View {
                             .font(.subheadline)
                             .foregroundColor(.secondary)
                     }
-
+                    
                     HStack(spacing: 6) {
                         Image(systemName: "chart.bar")
                             .foregroundColor(Color.greenPastelMedium)

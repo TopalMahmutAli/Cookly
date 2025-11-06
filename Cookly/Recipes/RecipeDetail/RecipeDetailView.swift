@@ -10,7 +10,7 @@ import DesignSystem
 
 struct RecipeDetailView: View {
     let recipe: RecipeModel
-    @Environment(FavoritesStore.self) private var favoritesStore
+    @Environment(FavoritesViewModel.self) private var favoritesStore
     
     var body: some View {
         ScrollView {

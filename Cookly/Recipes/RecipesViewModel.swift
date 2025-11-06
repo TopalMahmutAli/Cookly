@@ -17,7 +17,7 @@ class RecipesViewModel {
     var selectedCategory: String = "Tous"
     var searchText: String = ""
     
-     init(repository: RecipesRepository = MockRecipesRepository()) {
+    init(repository: RecipesRepository = MockRecipesRepository()) {
         self.repository = repository
     }
     

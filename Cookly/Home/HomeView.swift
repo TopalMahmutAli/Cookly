@@ -43,6 +43,7 @@ struct HomePage: View {
           .shadow(color: .greenSage.opacity(0.4), radius: 12, x: 0, y: 6)
         }
         .padding(.horizontal, 35)
+        .padding(.vertical, 20)
         
         // Lien vers les favoris, sous "nos recettes"
         NavigationLink(destination: FavoritesListView()) {

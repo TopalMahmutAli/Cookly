@@ -10,6 +10,7 @@ import DesignSystem
 
 struct RecipesListView: View {
     @State var viewModel = RecipesViewModel()
+    @Environment(FavoritesStore.self) private var favoritesStore
     
     let categories = ["Tous", "Entrée", "Plat", "Dessert"]
     
@@ -25,7 +26,15 @@ struct RecipesListView: View {
                     .foregroundColor(.red)
             }else {
                 List(viewModel.filteredCategories){recipe in NavigationLink(destination: RecipeDetailView(recipe: recipe)){
-                    RecipeCardView(title: recipe.title, image: recipe.image, time: recipe.time, difficulty: recipe.difficulty)
+                    RecipeCardView(
+                        title: recipe.title,
+                        image: recipe.image,
+                        time: recipe.time,
+                        difficulty: recipe.difficulty,
+                        showFavorite: true,
+                        isFavorite: favoritesStore.isFavorite(recipe.id),
+                        onToggleFavorite: { favoritesStore.toggleFavorite(id: recipe.id) }
+                    )
                 }
                     
                 }

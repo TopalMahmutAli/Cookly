@@ -10,7 +10,7 @@ import DesignSystem
 
 struct RecipesListView: View {
     @State var viewModel = RecipesViewModel()
-    @Environment(FavoritesStore.self) private var favoritesStore
+    @Environment(FavoritesViewModel.self) private var favoritesStore
     
     let categories = ["Tous", "Entrée", "Plat", "Dessert"]
     

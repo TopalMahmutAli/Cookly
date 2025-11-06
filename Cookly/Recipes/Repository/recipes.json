@@ -3,26 +3,29 @@
         "id": 1,
         "title": "Tiramisu",
         "image": "tiramisu",
-        "time": "30 min",
+        "time": "1 heure",
         "difficulty": "Moyen",
         "category": "Dessert",
         "ingredients": [
-          "Mascarpone",
-          "Café fort",
-          "Biscuits cuillère",
-          "Cacao en poudre",
-          "Œufs",
-          "Sucre"
+            "Mascarpone (250g)",
+            "Café fort non sucré (20cl)",
+            "Biscuits cuillère (24 pièces)",
+            "Cacao en poudre (non sucré)",
+            "3 œufs",
+            "80g de sucre",
+            "Une pincée de sel"
         ],
         "steps": [
-          "Séparer les blancs et les jaunes d'œufs.",
-          "Mélanger le mascarpone avec les jaunes et le sucre.",
-          "Monter les blancs en neige et incorporer délicatement.",
-          "Monter le tiramisu en couches et saupoudrer de cacao.",
-          "Laisser reposer 4h au réfrigérateur."
+            "Séparer les blancs des jaunes d'œufs.",
+            "Fouetter les jaunes avec le sucre jusqu’à ce que le mélange blanchisse.",
+            "Ajouter le mascarpone et bien mélanger.",
+            "Monter les blancs en neige avec une pincée de sel, puis les incorporer délicatement.",
+            "Tremper rapidement les biscuits dans le café et les disposer dans un plat.",
+            "Alterner couches de crème et biscuits.",
+            "Saupoudrer de cacao et laisser reposer 4h au réfrigérateur."
         ]
-      },
-      {
+    },
+    {
         "id": 2,
         "title": "Spaghetti Carbonara",
         "image": "carbonara",
@@ -30,20 +33,22 @@
         "difficulty": "Facile",
         "category": "Plat",
         "ingredients": [
-          "Spaghetti",
-          "Lardons",
-          "Œufs",
-          "Parmesan",
-          "Poivre"
+            "Spaghetti (400g)",
+            "Lardons fumés (150g)",
+            "2 œufs + 1 jaune",
+            "Parmesan râpé (60g)",
+            "Poivre noir",
+            "Sel"
         ],
         "steps": [
-          "Faire cuire les spaghetti al dente.",
-          "Cuire les lardons à feu moyen.",
-          "Battre les œufs avec le parmesan.",
-          "Mélanger les pâtes avec la sauce hors du feu."
+            "Cuire les spaghetti al dente dans de l’eau salée.",
+            "Faire revenir les lardons sans matière grasse.",
+            "Battre les œufs avec le parmesan et du poivre.",
+            "Égoutter les pâtes et mélanger hors du feu avec les lardons et la sauce.",
+            "Servir aussitôt avec un peu de parmesan."
         ]
-      },
-      {
+    },
+    {
         "id": 3,
         "title": "Salade César",
         "image": "cesar",
@@ -51,205 +56,217 @@
         "difficulty": "Facile",
         "category": "Entrée",
         "ingredients": [
-          "Laitue romaine",
-          "Poulet grillé",
-          "Croûtons",
-          "Parmesan",
-          "Sauce César"
+            "Laitue romaine",
+            "2 filets de poulet grillés",
+            "Croûtons à l’ail",
+            "Parmesan en copeaux",
+            "Sauce César",
+            "Sel et poivre"
         ],
         "steps": [
-          "Griller le poulet et le couper en morceaux.",
-          "Mélanger la laitue, les croûtons et le parmesan.",
-          "Ajouter la sauce César et le poulet avant de servir."
+            "Griller le poulet et le couper en lamelles.",
+            "Mélanger la laitue, les croûtons et le parmesan.",
+            "Ajouter la sauce César, puis le poulet tiède avant de servir."
         ]
-      },
-  {
-    "id": 4,
-    "title": "Pizza Margherita",
-    "image": "pizza_margherita",
-    "time": "25 min",
-    "difficulty": "Facile",
-    "category": "Plat",
-    "ingredients": [
-      "Pâte à pizza",
-      "Sauce tomate",
-      "Mozzarella",
-      "Basilic frais",
-      "Huile d'olive"
-    ],
-    "steps": [
-      "Étaler la pâte à pizza sur une plaque.",
-      "Étaler la sauce tomate uniformément.",
-      "Ajouter la mozzarella et quelques feuilles de basilic.",
-      "Cuire au four à 220°C pendant 10 à 12 minutes."
-    ]
-  },
-  {
-    "id": 5,
-    "title": "Endives au jambon",
-    "image": "endive_jambon",
-    "time": "40 min",
-    "difficulty": "Moyen",
-    "category": "Plat",
-    "ingredients": [
-      "Endives",
-      "Jambon blanc",
-      "Béchamel",
-      "Gruyère râpé",
-      "Beurre"
-    ],
-    "steps": [
-      "Cuire les endives à la vapeur 20 minutes.",
-      "Enrouler chaque endive dans une tranche de jambon.",
-      "Placer dans un plat et napper de béchamel.",
-      "Saupoudrer de gruyère et enfourner 15 minutes à 200°C."
-    ]
-  },
-  {
-    "id": 6,
-    "title": "Tajine de poulet aux olives",
-    "image": "tajine_poulet",
-    "time": "1h15",
-    "difficulty": "Moyen",
-    "category": "Plat",
-    "ingredients": [
-      "Poulet",
-      "Oignons",
-      "Citron confit",
-      "Olives vertes",
-      "Curcuma",
-      "Gingembre",
-      "Coriandre"
-    ],
-    "steps": [
-      "Faire revenir les oignons et le poulet dans l'huile d'olive.",
-      "Ajouter les épices et un peu d'eau.",
-      "Cuire à feu doux 45 minutes.",
-      "Ajouter les olives et le citron confit avant de servir."
-    ]
-  },
-  {
-    "id": 7,
-    "title": "Curry de légumes",
-    "image": "curry_legumes",
-    "time": "35 min",
-    "difficulty": "Facile",
-    "category": "Plat",
-    "ingredients": [
-      "Courgette",
-      "Carottes",
-      "Pois chiches",
-      "Lait de coco",
-      "Pâte de curry"
-    ],
-    "steps": [
-      "Faire revenir les légumes 10 min.",
-      "Ajouter la pâte de curry et le lait de coco.",
-      "Laisser mijoter 20 min à feu doux.",
-      "Servir avec du riz basmati."
-    ]
-  },
-  {
-    "id": 8,
-    "title": "Crêpes sucrées",
-    "image": "crepes",
-    "time": "20 min",
-    "difficulty": "Facile",
-    "category": "Dessert",
-    "ingredients": [
-      "Farine",
-      "Lait",
-      "Œufs",
-      "Sucre",
-      "Beurre"
-    ],
-    "steps": [
-      "Mélanger la farine, les œufs et le lait.",
-      "Ajouter le sucre et le beurre fondu.",
-      "Cuire les crêpes dans une poêle chaude."
-    ]
-  },
-  {
-    "id": 9,
-    "title": "Cookies au chocolat",
-    "image": "cookie",
-    "time": "15 min",
-    "difficulty": "Facile",
-    "category": "Dessert",
-    "ingredients": [
-      "Farine",
-      "Beurre",
-      "Sucre roux",
-      "Œuf",
-      "Pépites de chocolat"
-    ],
-    "steps": [
-      "Mélanger les ingrédients secs.",
-      "Ajouter le beurre fondu et l'œuf.",
-      "Former des boules et déposer sur une plaque.",
-      "Cuire 12 minutes à 180°C."
-    ]
-  },
-  {
-    "id": 10,
-    "title": "Soupe de potiron",
-    "image": "soupe_potiron",
-    "time": "30 min",
-    "difficulty": "Facile",
-    "category": "Entrée",
-    "ingredients": [
-      "Potiron",
-      "Oignon",
-      "Crème fraîche",
-      "Bouillon de légumes",
-      "Beurre"
-    ],
-    "steps": [
-      "Faire revenir les oignons dans le beurre.",
-      "Ajouter le potiron coupé en morceaux.",
-      "Verser le bouillon et cuire 20 min.",
-      "Mixer et ajouter la crème avant de servir."
-    ]
-  },
-  {
-    "id": 11,
-    "title": "Quiche lorraine",
-    "image": "quiche_lorraine",
-    "time": "45 min",
-    "difficulty": "Moyen",
-    "category": "Entrée",
-    "ingredients": [
-      "Pâte brisée",
-      "Crème fraîche",
-      "Lardons",
-      "Œufs",
-      "Gruyère râpé"
-    ],
-    "steps": [
-      "Faire revenir les lardons à la poêle.",
-      "Battre les œufs avec la crème et le fromage.",
-      "Étaler la pâte, garnir et enfourner 35 min à 180°C."
-    ]
-  },
-  {
-    "id": 12,
-    "title": "Bruschetta à la tomate",
-    "image": "bruschetta",
-    "time": "10 min",
-    "difficulty": "Facile",
-    "category": "Entrée",
-    "ingredients": [
-      "Pain de campagne",
-      "Tomates",
-      "Ail",
-      "Huile d'olive",
-      "Basilic"
-    ],
-    "steps": [
-      "Griller les tranches de pain.",
-      "Frotter avec l'ail.",
-      "Ajouter les tomates en dés et le basilic.",
-      "Arroser d’un filet d’huile d’olive."
-    ]
-  }
+    },
+    {
+        "id": 4,
+        "title": "Pizza Margherita",
+        "image": "pizza_margherita",
+        "time": "25 min",
+        "difficulty": "Facile",
+        "category": "Plat",
+        "ingredients": [
+            "Pâte à pizza (1)",
+            "Sauce tomate (200g)",
+            "Mozzarella (1 boule)",
+            "Feuilles de basilic frais",
+            "Huile d’olive",
+            "Origan séché"
+        ],
+        "steps": [
+            "Préchauffer le four à 220°C.",
+            "Étaler la pâte à pizza sur une plaque farinée.",
+            "Répartir la sauce tomate, puis la mozzarella tranchée.",
+            "Ajouter le basilic et un filet d’huile d’olive.",
+            "Cuire 10 à 12 minutes jusqu’à obtenir une pâte dorée."
+        ]
+    },
+    {
+        "id": 5,
+        "title": "Endives au jambon",
+        "image": "endive_jambon",
+        "time": "40 min",
+        "difficulty": "Moyen",
+        "category": "Plat",
+        "ingredients": [
+            "4 endives",
+            "4 tranches de jambon blanc",
+            "40cl de béchamel",
+            "Gruyère râpé",
+            "Beurre",
+            "Sel, poivre, muscade"
+        ],
+        "steps": [
+            "Cuire les endives à la vapeur pendant 20 minutes.",
+            "Les égoutter et les enrouler dans les tranches de jambon.",
+            "Disposer dans un plat à gratin, napper de béchamel et parsemer de gruyère.",
+            "Enfourner 15 minutes à 200°C jusqu’à gratiner."
+        ]
+    },
+    {
+        "id": 6,
+        "title": "Tajine de poulet aux olives",
+        "image": "tajine_poulet",
+        "time": "1h15",
+        "difficulty": "Moyen",
+        "category": "Plat",
+        "ingredients": [
+            "1 poulet coupé en morceaux",
+            "2 oignons émincés",
+            "1 citron confit",
+            "150g d’olives vertes",
+            "Curcuma, gingembre, coriandre",
+            "Huile d’olive",
+            "Sel, poivre"
+        ],
+        "steps": [
+            "Faire revenir les oignons et le poulet dans l’huile d’olive.",
+            "Ajouter les épices et 20cl d’eau, puis couvrir.",
+            "Laisser mijoter à feu doux 45 minutes.",
+            "Ajouter les olives et le citron confit 10 minutes avant la fin de cuisson."
+        ]
+    },
+    {
+        "id": 7,
+        "title": "Curry de légumes",
+        "image": "curry_legumes",
+        "time": "35 min",
+        "difficulty": "Facile",
+        "category": "Plat",
+        "ingredients": [
+            "1 courgette",
+            "2 carottes",
+            "1 poivron rouge",
+            "200g de pois chiches",
+            "20cl de lait de coco",
+            "1 c. à soupe de pâte de curry"
+        ],
+        "steps": [
+            "Éplucher et couper les légumes en morceaux.",
+            "Les faire revenir dans une poêle 10 minutes.",
+            "Ajouter la pâte de curry et le lait de coco.",
+            "Laisser mijoter 20 minutes à feu doux.",
+            "Servir chaud avec du riz basmati."
+        ]
+    },
+    {
+        "id": 8,
+        "title": "Crêpes sucrées",
+        "image": "crepes",
+        "time": "20 min",
+        "difficulty": "Facile",
+        "category": "Dessert",
+        "ingredients": [
+            "250g de farine",
+            "3 œufs",
+            "50g de sucre",
+            "50g de beurre fondu",
+            "50cl de lait",
+            "1 pincée de sel"
+        ],
+        "steps": [
+            "Mélanger la farine, les œufs et le lait.",
+            "Ajouter le sucre, le beurre fondu et une pincée de sel.",
+            "Laisser reposer 30 minutes, puis cuire les crêpes dans une poêle chaude."
+        ]
+    },
+    {
+        "id": 9,
+        "title": "Cookies au chocolat",
+        "image": "cookie",
+        "time": "15 min",
+        "difficulty": "Facile",
+        "category": "Dessert",
+        "ingredients": [
+            "200g de farine",
+            "100g de beurre fondu",
+            "100g de sucre roux",
+            "1 œuf",
+            "150g de pépites de chocolat",
+            "1/2 sachet de levure"
+        ],
+        "steps": [
+            "Mélanger farine, sucre et levure.",
+            "Ajouter le beurre et l'œuf, puis incorporer les pépites.",
+            "Former des boules et disposer sur une plaque.",
+            "Cuire 12 minutes à 180°C."
+        ]
+    },
+    {
+        "id": 10,
+        "title": "Soupe de potiron",
+        "image": "soupe_potiron",
+        "time": "30 min",
+        "difficulty": "Facile",
+        "category": "Entrée",
+        "ingredients": [
+            "800g de potiron",
+            "1 oignon",
+            "50cl de bouillon de légumes",
+            "20cl de crème fraîche",
+            "Beurre",
+            "Sel, poivre"
+        ],
+        "steps": [
+            "Faire revenir l’oignon dans le beurre.",
+            "Ajouter le potiron coupé en dés et le bouillon.",
+            "Cuire 20 minutes, puis mixer.",
+            "Ajouter la crème avant de servir chaud."
+        ]
+    },
+    {
+        "id": 11,
+        "title": "Quiche lorraine",
+        "image": "quiche_lorraine",
+        "time": "45 min",
+        "difficulty": "Moyen",
+        "category": "Entrée",
+        "ingredients": [
+            "1 pâte brisée",
+            "200g de lardons",
+            "3 œufs",
+            "25cl de crème fraîche",
+            "Gruyère râpé",
+            "Sel, poivre, muscade"
+        ],
+        "steps": [
+            "Faire revenir les lardons à la poêle.",
+            "Battre les œufs avec la crème, le fromage et l’assaisonnement.",
+            "Étaler la pâte dans un moule, verser la préparation.",
+            "Enfourner 35 min à 180°C jusqu’à dorure."
+        ]
+    },
+    {
+        "id": 12,
+        "title": "Bruschetta à la tomate",
+        "image": "bruschetta",
+        "time": "10 min",
+        "difficulty": "Facile",
+        "category": "Entrée",
+        "ingredients": [
+            "Tranches de pain de campagne",
+            "3 tomates mûres",
+            "1 gousse d’ail",
+            "Huile d’olive",
+            "Basilic frais",
+            "Sel, poivre"
+        ],
+        "steps": [
+            "Griller les tranches de pain.",
+            "Frotter avec l’ail coupé en deux.",
+            "Ajouter les tomates en dés, le basilic, le sel et un filet d’huile d’olive.",
+            "Servir immédiatement."
+        ]
+    }
 ]

@@ -1,7 +1,13 @@
+//
+//  FavoritesViewModel.swift
+//  Cookly
+//
+//  Created by ARARE Kaoutar on 06/11/2025.
+//
 import Foundation
 
 @Observable
-class FavoritesStore {
+class FavoritesViewModel {
     private let storageKey = "favorite_recipe_ids"
     private(set) var favoriteIds: Set<Int> = []
     

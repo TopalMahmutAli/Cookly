@@ -2,7 +2,7 @@
 //  FavoritesListView.swift
 //  Cookly
 //
-//  Created by Assistant on 06/11/2025.
+//  Created by ARARE Kaoutar on 06/11/2025.
 //
 
 import SwiftUI
@@ -10,7 +10,7 @@ import DesignSystem
 
 struct FavoritesListView: View {
     @State private var viewModel = RecipesViewModel()
-    @Environment(FavoritesStore.self) private var favoritesStore
+    @Environment(FavoritesViewModel.self) private var favoritesStore
     
     var favoriteRecipes: [RecipeModel] {
         viewModel.recipes.filter { favoritesStore.isFavorite($0.id) }

@@ -10,7 +10,7 @@ import SwiftUI
 /**
  Category Picker permet au utilisateur de choisir la categorie qu'elle souhaite visualiser,
  par défaut l'affichage se fait en 'tous'
-**/
+ **/
 
 public struct CategoryPicker: View {
     @Binding var selectedCategory: String

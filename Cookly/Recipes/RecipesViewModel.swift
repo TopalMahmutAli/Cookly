@@ -15,6 +15,7 @@ class RecipesViewModel {
     var errorMessage: String?
     
     var selectedCategory: String = "Tous"
+    var searchText: String = ""
     
      init(repository: RecipesRepository = MockRecipesRepository()) {
         self.repository = repository
@@ -31,13 +32,20 @@ class RecipesViewModel {
         }
         isLoading = false
     }
-    var filteredRecipes: [RecipeModel] {
-        if selectedCategory == "Tous"{
-            return recipes
-        }else {
-            return recipes.filter { $0.category == selectedCategory }
+    
+    
+    var filteredCategories: [RecipeModel] {
+        var filtered = recipes
+        
+        if selectedCategory != "Tous" {
+            filtered = filtered.filter { $0.category == selectedCategory }
         }
-            
+        if !searchText.isEmpty {
+            filtered = filtered.filter {
+                $0.title.lowercased().contains(searchText.lowercased())
+            }
+        }
+        return filtered
     }
     
 }

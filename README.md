@@ -3,8 +3,8 @@
 Cookly est une application iOS de recettes construite avec SwiftUI, suivant une architecture MVVM stricte et un Design System modulaire embarqué sous forme de package Swift. Le projet démontre l’usage d’API modernes (NavigationStack, @State/@Binding/@Observable) et d’async/await pour le chargement des données.
 
 ### Équipe / Auteurs
-- ARARE Kaoutar — Design System, Home, UI
-- TOPAL Mahmut‑Ali — MVVM Recettes, Repository, Composants
+- ARARE Kaoutar 
+- TOPAL Mahmut‑Ali 
 
 
 ### Contexte et objectifs pédagogiques

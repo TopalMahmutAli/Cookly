@@ -60,12 +60,8 @@ public struct RecipeCardView: View {
             }
             .padding(16)
         }
-//        .background(Color.white)
+
         .cornerRadius(16)
-//        .overlay(
-//            RoundedRectangle(cornerRadius: 16)
-//                .stroke(Color.greenPastelMedium, lineWidth: 1.5)
-//        )
         .shadow(
             color: Color.greenSage.opacity(0.15),
             radius:8,

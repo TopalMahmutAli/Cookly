@@ -14,22 +14,9 @@
 		EA25577C2EBA54E800A7C7AA /* Cookly.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cookly.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
-/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		EAE040D02EBB3F9C00B4AEDE /* Exceptions for "Cookly" folder in "Cookly" target */ = {
-			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
-			membershipExceptions = (
-				package/Users/mt254663/Desktop/Cookly/Cookly/package/DesignSystem,
-			);
-			target = EA25577B2EBA54E800A7C7AA /* Cookly */;
-		};
-/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
-
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		EA25577E2EBA54E800A7C7AA /* Cookly */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			exceptions = (
-				EAE040D02EBB3F9C00B4AEDE /* Exceptions for "Cookly" folder in "Cookly" target */,
-			);
 			path = Cookly;
 			sourceTree = "<group>";
 		};

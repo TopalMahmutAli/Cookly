@@ -9,7 +9,7 @@ import Foundation
 
 @Observable
 class RecipesViewModel {
-    private let repository: RecipesRepository
+    private let repository: RecipesRepositoryProtocol
     var recipes: [RecipeModel] = []
     var isLoading: Bool = false
     var errorMessage: String?
@@ -17,7 +17,7 @@ class RecipesViewModel {
     var selectedCategory: String = "Tous"
     var searchText: String = ""
     
-     init(repository: RecipesRepository = MockRecipesRepository()) {
+     init(repository: RecipesRepositoryProtocol = PersistentRecipesRepository()) {
         self.repository = repository
     }
     
@@ -33,7 +33,6 @@ class RecipesViewModel {
         isLoading = false
     }
     
-    
     var filteredCategories: [RecipeModel] {
         var filtered = recipes
         
@@ -46,6 +45,11 @@ class RecipesViewModel {
             }
         }
         return filtered
+    }
+    
+    func addRecipe(_recipe: RecipeModel) async {
+        recipes.append(_recipe)
+        try? await repository.saveRecipes(recipes)
     }
     
 }

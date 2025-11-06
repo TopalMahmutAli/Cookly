@@ -10,11 +10,12 @@ import DesignSystem
 
 struct RecipeDetailView: View {
     let recipe: RecipeModel
+    var uiImage: UIImage? = nil
     
     var body: some View {
         ScrollView {
             VStack(alignment: .leading, spacing: 20) {
-                Image(recipe.image)
+                if let uiImage{Image(recipe.image)
                     .resizable()
                     .scaledToFill()
                     .frame(maxWidth: .infinity, maxHeight: 250)

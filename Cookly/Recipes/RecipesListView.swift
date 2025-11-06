@@ -14,6 +14,8 @@ struct RecipesListView: View {
     let categories = ["Tous", "Entrée", "Plat", "Dessert"]
     
     var body: some View {
+        SearchBarView(text: $viewModel.searchText, placeholder: "Rechercher votre recettes...")
+        
         CategoryPicker(selectedCategory: $viewModel.selectedCategory, categories: categories)
         
             if viewModel.isLoading {
@@ -22,7 +24,7 @@ struct RecipesListView: View {
                 Text("Erreur:\(error)")
                     .foregroundColor(.red)
             }else {
-                List(viewModel.filteredRecipes){recipe in NavigationLink(destination: RecipeDetailView(recipe: recipe)){
+                List(viewModel.filteredCategories){recipe in NavigationLink(destination: RecipeDetailView(recipe: recipe)){
                     RecipeCardView(title: recipe.title, image: recipe.image, time: recipe.time, difficulty: recipe.difficulty)
                 }
                     

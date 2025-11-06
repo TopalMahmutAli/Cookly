@@ -20,8 +20,8 @@ Cookly est une application iOS de recettes construite avec SwiftUI, suivant une 
 - Navigation fluide via `NavigationStack` (Accueil → Liste → Détail, + écran Favoris)
 
 ### Architecture (MVVM)
-- **Model**: `RecipeModel` (Codable, Identifiable) + `FavoritesStoreModel` (état observable, persistance UserDefaults)
-- **ViewModel**: `RecipesViewModel` (source de vérité de l’UI: chargement, erreurs, filtrage, search)
+- **Model**: `RecipeModel` (Codable, Identifiable)
+- **ViewModel**: `RecipesViewModel` (source de vérité de l’UI: chargement, erreurs, filtrage, search) + `FavoritesViewModel` (état observable, persistance UserDefaults)
 - **Views**:
   - `HomePage`: écran d’accueil, accès aux recettes et favoris
   - `RecipesListView`: liste + `SearchBarView` + `CategoryPicker` + cartes
@@ -58,13 +58,13 @@ Cookly/
   CooklyApp.swift
   Home/
     HomeView.swift (HomePage)
-    LogoSection.swift
+  Favoris/
+    FavoritesListView.swift
+    FavoritesViewModel.swift
   Model/
     RecipeModel.swift
-    FavoritesStoreModel.swift (FavoritesStore)
   Recipes/
     RecipesListView.swift
-    FavoritesListView.swift
     RecipeDetail/RecipeDetailView.swift
     RecipesViewModel.swift
     Repository/
@@ -73,7 +73,7 @@ Cookly/
   package/DesignSystem/
     Sources/DesignSystem/
       Colors/AppColors.swift
-      Component/RecipeCardView.swift, SearchBarView.swift, CategoryPicker.swift
+      Component/RecipeCardView.swift, SearchBarView.swift, CategoryPicker.swift, LogoSectionView
 ```
 
 ### Installation & Lancement

@@ -17,35 +17,59 @@ struct FavoritesListView: View {
     }
     
     var body: some View {
-        Group {
-            if viewModel.isLoading {
-                ProgressView("Chargement des recettes…")
-            } else if let error = viewModel.errorMessage {
-                Text("Erreur: \(error)")
-                    .foregroundColor(.red)
-            } else if favoriteRecipes.isEmpty {
-                ContentUnavailableView("Aucun favori",
-                                       systemImage: "star",
-                                       description: Text("Ajoutez des recettes en appuyant sur l’étoile."))
-            } else {
-                List(favoriteRecipes) { recipe in
-                    NavigationLink(destination: RecipeDetailView(recipe: recipe)) {
-                        RecipeCardView(
-                            title: recipe.title,
-                            image: recipe.image,
-                            time: recipe.time,
-                            difficulty: recipe.difficulty,
-                            showFavorite: true,
-                            isFavorite: favoritesStore.isFavorite(recipe.id),
-                            onToggleFavorite: { favoritesStore.toggleFavorite(id: recipe.id) }
-                        )
+        ZStack {
+            Color.appBackground.ignoresSafeArea()
+            Group {
+                if viewModel.isLoading {
+                    ProgressView("Chargement des recettes…")
+                } else if let error = viewModel.errorMessage {
+                    Text("Erreur: \(error)")
+                        .foregroundColor(.red)
+                } else if favoriteRecipes.isEmpty {
+                    VStack(spacing: 12) {
+                        Image(systemName: "star")
+                            .font(.system(size: 40, weight: .semibold))
+                            .foregroundColor(.greenSage)
+                        Text("Aucun favori")
+                            .font(.title3)
+                            .fontWeight(.semibold)
+                            .foregroundColor(.primary)
+                        Text("Ajoutez des recettes en appuyant sur l’étoile.")
+                            .foregroundColor(.secondary)
                     }
+                } else {
+                    List(favoriteRecipes) { recipe in
+                        NavigationLink(destination: RecipeDetailView(recipe: recipe)) {
+                            RecipeCardView(
+                                title: recipe.title,
+                                image: recipe.image,
+                                time: recipe.time,
+                                difficulty: recipe.difficulty,
+                                showFavorite: true,
+                                isFavorite: favoritesStore.isFavorite(recipe.id),
+                                onToggleFavorite: { favoritesStore.toggleFavorite(id: recipe.id) }
+                            )
+                        }
+                    }
+                    .listStyle(.plain)
+                    .listRowBackground(Color.appBackground)
+                    .listRowSeparator(.hidden)
+                    .scrollContentBackground(.hidden)
+                    .background(Color.clear)
                 }
             }
         }
         .navigationTitle("Mes favoris")
+        .navigationBarTitleDisplayMode(.inline)
+        .toolbar {
+            ToolbarItem(placement: .principal) {
+                Text("Mes favoris")
+                    .font(.title2)
+                    .fontWeight(.semibold)
+                    .foregroundColor(.greenSageDark)
+            }
+        }
         .task { await viewModel.loadingRecipes() }
-        .background(Color.appBackground.ignoresSafeArea())
     }
 }
 

@@ -32,7 +32,7 @@ public struct SearchBarView: View {
             }
         }
         .padding(10)
-        .background(Color(.systemGray6))
+        .background(Color.white)
         .cornerRadius(12)
         .padding(.horizontal)
     }
